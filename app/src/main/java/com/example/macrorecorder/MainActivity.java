@@ -40,10 +40,16 @@ public class MainActivity extends Activity {
         TextView help = new TextView(this);
         help.setTextSize(15);
         help.setText(
-                "Setup (once):\n"
-                + "1. Tap \"Open app info\", then the \u22EE menu (top right) and choose "
-                + "\"Allow restricted settings\" (Android 13+; if you don't see it, skip this step).\n"
-                + "2. Tap \"Open Accessibility settings\", choose Macro Recorder, and switch it on.\n\n"
+                "Permissions (setup once):\n"
+                + "Android does not show an install-time prompt for Accessibility access. "
+                + "This app needs it to capture your taps and swipes and replay them. "
+                + "Accessibility access lets the app observe screen interactions and perform gestures.\n\n"
+                + "On a Galaxy Fold (Android 13 or later), Android may block this for apps "
+                + "installed from an APK. First tap \"Open app info\", tap the \u22EE menu, "
+                + "then tap \"Allow restricted settings\" and confirm with your screen lock. "
+                + "Return here, tap \"Open Accessibility settings\", then Installed apps > "
+                + "Macro Recorder and turn it on. If Android says the setting is restricted, "
+                + "allow restricted settings in App info before trying again.\n\n"
                 + "Use:\n"
                 + "\u2022 A floating bar appears on top of every app. Drag it by its status text.\n"
                 + "\u2022 \u25CF Rec: do your taps and swipes, then press Stop.\n"
